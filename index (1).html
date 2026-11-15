@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alô, alô! Bora comemorar! | Aniversário do Leo</title>
+<meta name="description" content="Meu aniversário está chegando e quero celebrar com você! 28 de novembro, ao meio-dia, no Mocellin Gourmet. Confirme sua presença.">
+<meta name="theme-color" content="#1a0d06">
+<meta property="og:title" content="Alô, alô! Bora comemorar!">
+<meta property="og:description" content="28 de novembro, ao meio-dia, no Mocellin Gourmet (Barra da Tijuca). Confirme sua presença!">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--fire:#ff7a1a;--gold:#ffc61a;--wood:#4a2412;--wood-2:#6b3a1e;--wood-dark:#2a130a;--ink:#1a0d06;--red:#9c1c0c;--cream:#fff6e0;--title:'Lilita One',sans-serif;--body:'Nunito',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--cream);font-family:var(--body);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+.bg{position:fixed;inset:0;z-index:-3;background:radial-gradient(1100px 600px at 85% 105%,rgba(255,90,10,.5),transparent 60%),radial-gradient(800px 500px at 8% 0%,rgba(255,198,26,.18),transparent 60%),linear-gradient(180deg,#1a0d06,#2a1409 55%,#3a1a0a)}
+.luzes{position:fixed;top:0;left:0;right:0;height:34px;z-index:-1;background-image:radial-gradient(circle at 50% 55%,#ffe3a0 0 3px,rgba(255,190,80,.45) 4px,transparent 11px);background-size:46px 34px;animation:pisca 3s ease-in-out infinite alternate;pointer-events:none}
+@keyframes pisca{from{opacity:.55}to{opacity:1}}
+.brasas{position:fixed;inset:0;z-index:-2;pointer-events:none;overflow:hidden}
+.brasas span{position:absolute;bottom:-12px;border-radius:50%;background:radial-gradient(circle,#ffd37a,var(--fire) 60%,transparent 70%);opacity:0;animation-name:sobe;animation-iteration-count:infinite;animation-timing-function:ease-in}
+@keyframes sobe{0%{transform:translate(0,0);opacity:0}15%{opacity:.9}100%{transform:translate(40px,-105vh);opacity:0}}
+
+.plank{background:repeating-linear-gradient(92deg,rgba(0,0,0,0) 0 38px,rgba(0,0,0,.2) 38px 40px),linear-gradient(180deg,var(--wood-2),var(--wood));border:3px solid var(--wood-dark);border-radius:14px;box-shadow:inset 0 2px 0 rgba(255,200,140,.18),0 7px 0 var(--wood-dark),0 16px 28px rgba(0,0,0,.5)}
+
+.pagina{max-width:1040px;margin:0 auto;padding:64px 18px 48px;display:flex;flex-direction:column;gap:34px}
+
+.hero{display:grid;gap:28px;align-items:center}
+.foto-wrap{position:relative;justify-self:center;width:min(100%,420px)}
+.foto{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:22px;border:4px solid var(--gold);box-shadow:0 0 0 6px var(--wood-dark),0 0 50px rgba(255,122,26,.45),0 20px 40px rgba(0,0,0,.55)}
+.foto-vazia{display:grid;place-items:center;font-size:6rem;background:linear-gradient(160deg,var(--wood-2),var(--wood))}
+.selo{position:absolute;top:-22px;left:-10px;padding:10px 18px 12px;text-align:center;line-height:1;transform:rotate(-4deg)}
+.selo-fogo{display:block;font-size:1.5rem}
+.selo-nome{display:block;font-family:var(--title);font-size:1.7rem;color:#fff;font-style:italic}
+.selo-sub{display:block;margin-top:4px;font-weight:800;font-size:.7rem;letter-spacing:.25em;color:var(--gold)}
+
+.hero-texto{display:flex;flex-direction:column;gap:20px}
+.titulo-box{padding:22px 20px 26px;transform:rotate(-1.5deg)}
+h1{font-family:var(--title);font-weight:400;font-style:italic;line-height:.98;display:flex;flex-direction:column;text-shadow:0 4px 0 rgba(0,0,0,.45)}
+.t-branco{font-size:clamp(3rem,12vw,5.2rem);color:#fff}
+.t-ouro{font-size:clamp(2.2rem,9vw,3.8rem);color:var(--gold)}
+.t-ouro::after{content:'';display:block;height:7px;margin-top:6px;border-radius:8px;background:var(--gold);transform:rotate(-1deg);box-shadow:0 3px 0 rgba(0,0,0,.35)}
+.frase-box{padding:20px 22px;transform:rotate(.8deg)}
+.frase-box p{font-family:var(--title);font-size:clamp(1.5rem,5.5vw,2.2rem);line-height:1.2;text-shadow:0 3px 0 rgba(0,0,0,.4)}
+.frase-box em{color:var(--gold);font-style:italic}
+
+.detalhes{display:grid;gap:18px}
+.detalhe{display:flex;align-items:center;gap:16px;padding:18px 20px}
+.icone{font-size:2.3rem;line-height:1;filter:drop-shadow(0 3px 0 rgba(0,0,0,.35))}
+.detalhe strong{display:block;font-family:var(--title);font-weight:400;font-size:1.6rem;line-height:1.1}
+.detalhe small{display:block;margin-top:3px;font-weight:800;font-size:1.05rem;color:var(--gold);font-style:italic}
+
+.local{text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px}
+.endereco{font-weight:800;font-size:clamp(1rem,3.6vw,1.3rem)}
+.btn-mapa{display:inline-block;padding:12px 26px;border-radius:999px;border:3px solid var(--gold);color:var(--gold);font-weight:800;text-decoration:none;transition:transform .15s,background .15s,color .15s}
+.btn-mapa:hover,.btn-mapa:focus-visible{background:var(--gold);color:var(--wood-dark);transform:translateY(-2px)}
+
+.contagem{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:480px;width:100%;margin:0 auto;min-height:84px}
+.contagem-item{padding:12px 4px 10px;text-align:center;border-radius:12px;box-shadow:inset 0 2px 0 rgba(255,200,140,.18),0 5px 0 var(--wood-dark),0 10px 18px rgba(0,0,0,.45)}
+.contagem-item strong{display:block;font-family:var(--title);font-weight:400;font-size:clamp(1.7rem,7vw,2.4rem);color:var(--gold);line-height:1}
+.contagem-item span{display:block;margin-top:5px;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em}
+.contagem-fim{grid-column:1/-1;text-align:center;font-family:var(--title);font-size:1.8rem;color:var(--gold)}
+
+.rsvp{display:flex;flex-direction:column;align-items:center;gap:26px;scroll-margin-top:20px}
+.pincel{background:var(--gold);padding:16px 30px 20px;border-radius:6px 26px 8px 22px;transform:rotate(-1.5deg);box-shadow:0 8px 0 rgba(0,0,0,.35),0 16px 30px rgba(0,0,0,.4);max-width:100%}
+.pincel h2{font-family:var(--title);font-weight:400;font-style:italic;font-size:clamp(1.7rem,6.5vw,2.6rem);line-height:1.1;color:var(--red);text-align:center}
+.form,.sucesso{width:100%;max-width:520px;padding:26px 22px 28px}
+.form{display:flex;flex-direction:column;gap:10px}
+.form label{font-weight:800;font-size:1.05rem;margin-top:8px}
+.form input[type=text]{width:100%;padding:15px 16px;font:inherit;font-size:1.1rem;color:var(--wood-dark);background:var(--cream);border:3px solid transparent;border-radius:12px;outline:none;transition:border-color .15s,box-shadow .15s}
+.form input[type=text]:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(255,198,26,.3)}
+.stepper{display:flex;align-items:center;justify-content:center;gap:22px}
+.stepper button{width:58px;height:58px;border-radius:50%;border:3px solid var(--wood-dark);background:var(--gold);color:var(--wood-dark);font-size:2rem;font-weight:800;line-height:1;cursor:pointer;box-shadow:0 5px 0 var(--wood-dark);transition:transform .1s,box-shadow .1s}
+.stepper button:active{transform:translateY(4px);box-shadow:0 1px 0 var(--wood-dark)}
+.stepper output{min-width:64px;text-align:center;font-family:var(--title);font-size:3rem;color:var(--gold);line-height:1}
+.honey{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.erro{margin-top:6px;padding:10px 12px;border-radius:10px;background:rgba(156,28,12,.85);font-weight:700}
+.btn-confirmar{margin-top:16px;padding:17px 20px;border:3px solid var(--wood-dark);border-radius:14px;background:linear-gradient(180deg,#ffd23d,var(--gold));color:var(--red);font-family:var(--title);font-size:1.5rem;cursor:pointer;box-shadow:0 6px 0 var(--wood-dark),0 12px 22px rgba(255,122,26,.35);transition:transform .1s,box-shadow .1s,filter .15s}
+.btn-confirmar:hover{filter:brightness(1.07)}
+.btn-confirmar:active{transform:translateY(5px);box-shadow:0 1px 0 var(--wood-dark)}
+.btn-confirmar:disabled{opacity:.7;cursor:wait}
+.sucesso{text-align:center}
+.sucesso-emoji{font-size:3.4rem}
+.sucesso h3{font-family:var(--title);font-weight:400;font-size:2rem;color:var(--gold);margin:6px 0 10px}
+.sucesso p{font-size:1.1rem;line-height:1.45}
+.btn-sec{margin-top:20px;padding:11px 22px;border-radius:999px;border:3px solid var(--gold);background:transparent;color:var(--gold);font:inherit;font-weight:800;cursor:pointer}
+.btn-sec:hover{background:var(--gold);color:var(--wood-dark)}
+.rodape{text-align:center;font-size:.9rem;opacity:.7;padding-top:8px}
+[hidden]{display:none!important}
+
+@media (min-width:820px){
+  .pagina{padding-top:80px;gap:44px}
+  .hero{grid-template-columns:1fr 1.15fr;gap:44px}
+  .detalhes{grid-template-columns:repeat(3,1fr)}
+  .detalhe{flex-direction:column;text-align:center;padding:24px 16px}
+}
+@media (prefers-reduced-motion:reduce){
+  .luzes,.brasas span{animation:none}
+  .brasas{display:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<div class="luzes" aria-hidden="true"></div>
+<div class="brasas" id="brasas" aria-hidden="true"></div>
+
+<main class="pagina">
+  <section class="hero">
+    <div class="foto-wrap">
+      <img id="foto" class="foto" src="foto.jpg" alt="Foto do aniversariante brindando">
+      <div id="foto-vazia" class="foto foto-vazia" hidden>🍻</div>
+      <div class="selo plank">
+        <span class="selo-fogo">🔥</span>
+        <span class="selo-nome">Mocellin</span>
+        <span class="selo-sub">GOURMET</span>
+      </div>
+    </div>
+    <div class="hero-texto">
+      <div class="plank titulo-box">
+        <h1><span class="t-branco">Alô, alô!</span><span class="t-ouro">Bora comemorar!</span></h1>
+      </div>
+      <div class="plank frase-box">
+        <p>Meu aniversário está chegando e quero <em>celebrar</em> com você!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="detalhes" aria-label="Detalhes da festa">
+    <div class="plank detalhe"><span class="icone">📅</span><div><strong>28 de novembro</strong><small>Sábado</small></div></div>
+    <div class="plank detalhe"><span class="icone">🕛</span><div><strong>Ao meio-dia</strong><small>12h</small></div></div>
+    <div class="plank detalhe"><span class="icone">📍</span><div><strong>Mocellin Gourmet</strong><small>Barra da Tijuca</small></div></div>
+  </section>
+
+  <section class="local">
+    <p class="endereco">Av. Marechal Henrique Lott, 120 - Barra da Tijuca</p>
+    <a id="mapa" class="btn-mapa" href="#" target="_blank" rel="noopener noreferrer">Ver no mapa</a>
+  </section>
+
+  <div id="contagem" class="contagem" role="timer" aria-label="Contagem regressiva para a festa"></div>
+
+  <section class="rsvp" id="confirmar">
+    <div class="pincel"><h2>Confirme sua presença!</h2></div>
+
+    <form id="form" class="plank form" novalidate>
+      <label for="nome">Seu nome</label>
+      <input id="nome" type="text" autocomplete="name" placeholder="Como você se chama?" maxlength="80" required>
+
+      <label for="pessoas">Quantas pessoas vão, contando você?</label>
+      <div class="stepper">
+        <button type="button" id="menos" aria-label="Diminuir">−</button>
+        <output id="pessoas" aria-live="polite">1</output>
+        <button type="button" id="mais" aria-label="Aumentar">+</button>
+      </div>
+
+      <input type="text" id="honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <p id="erro" class="erro" role="alert" hidden></p>
+
+      <button type="submit" id="enviar" class="btn-confirmar">Confirmar presença 🔥</button>
+    </form>
+
+    <div id="sucesso" class="plank sucesso" role="status" hidden>
+      <div class="sucesso-emoji">🎉</div>
+      <h3>Presença confirmada!</h3>
+      <p id="sucesso-texto"></p>
+      <button type="button" id="outra" class="btn-sec">Confirmar outra pessoa</button>
+    </div>
+  </section>
+
+  <footer class="rodape">Feito com 🔥 para a gente comemorar junto</footer>
+</main>
+
+<script>
+// ====== CONFIGURAÇÃO ======
+// Cole aqui a URL do Google Apps Script (termina em /exec).
+var RSVP_URL = 'COLE_AQUI_A_URL_DO_SEU_SCRIPT';
+// ==========================
+
+var EVENTO = new Date('2026-11-28T12:00:00-03:00');
+var ENDERECO = 'Av. Marechal Henrique Lott, 120 - Barra da Tijuca';
+var $ = function (id) { return document.getElementById(id); };
+
+// mapa
+$('mapa').href = 'https://www.google.com/maps/search/?api=1&query=' +
+  encodeURIComponent('Mocellin Gourmet ' + ENDERECO + ' Rio de Janeiro');
+
+// foto (se não existir, mostra o 🍻)
+$('foto').addEventListener('error', function () {
+  $('foto').hidden = true;
+  $('foto-vazia').hidden = false;
+});
+
+// brasas
+(function () {
+  var box = $('brasas');
+  for (var i = 0; i < 18; i++) {
+    var s = document.createElement('span');
+    var t = 3 + (i % 4) * 2;
+    s.style.left = ((i * 37) % 100) + '%';
+    s.style.width = s.style.height = t + 'px';
+    s.style.animationDelay = ((i * 0.9) % 9) + 's';
+    s.style.animationDuration = (6 + (i % 5) * 1.5) + 's';
+    box.appendChild(s);
+  }
+})();
+
+// contagem regressiva
+(function () {
+  var el = $('contagem');
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function tick() {
+    var falta = EVENTO.getTime() - Date.now();
+    if (falta <= 0) {
+      el.innerHTML = '<p class="contagem-fim">É hoje! Bora comemorar! 🎉</p>';
+      return;
+    }
+    var s = Math.floor(falta / 1000);
+    var itens = [
+      ['dias', Math.floor(s / 86400)],
+      ['horas', Math.floor((s % 86400) / 3600)],
+      ['min', Math.floor((s % 3600) / 60)],
+      ['seg', s % 60]
+    ];
+    el.innerHTML = itens.map(function (it) {
+      return '<div class="contagem-item plank"><strong>' + pad(it[1]) + '</strong><span>' + it[0] + '</span></div>';
+    }).join('');
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+
+// formulário
+var pessoas = 1;
+function mostraPessoas() { $('pessoas').textContent = pessoas; }
+$('menos').addEventListener('click', function () { pessoas = Math.max(1, pessoas - 1); mostraPessoas(); });
+$('mais').addEventListener('click', function () { pessoas = Math.min(15, pessoas + 1); mostraPessoas(); });
+
+function mostraErro(msg) {
+  var e = $('erro');
+  e.textContent = msg;
+  e.hidden = !msg;
+}
+
+$('form').addEventListener('submit', function (ev) {
+  ev.preventDefault();
+  if ($('honey').value) return;
+  var nome = $('nome').value.trim();
+  if (nome.length < 2) { mostraErro('Coloque seu nome, por favor.'); return; }
+  if (RSVP_URL.indexOf('COLE_AQUI') === 0) { mostraErro('O formulário ainda não foi configurado.'); return; }
+
+  mostraErro('');
+  var btn = $('enviar');
+  btn.disabled = true;
+  btn.textContent = 'Enviando...';
+
+  fetch(RSVP_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify({ nome: nome, pessoas: pessoas })
+  }).then(function () {
+    $('sucesso-texto').textContent =
+      'Valeu, ' + nome + '! Anotei ' + pessoas + (pessoas === 1 ? ' pessoa' : ' pessoas') + '. Te espero lá!';
+    $('form').hidden = true;
+    $('sucesso').hidden = false;
+  }).catch(function () {
+    mostraErro('Não consegui enviar. Tenta de novo?');
+  }).finally(function () {
+    btn.disabled = false;
+    btn.textContent = 'Confirmar presença 🔥';
+  });
+});
+
+$('outra').addEventListener('click', function () {
+  $('nome').value = '';
+  pessoas = 1;
+  mostraPessoas();
+  $('sucesso').hidden = true;
+  $('form').hidden = false;
+});
+</script>
+</body>
+</html>
